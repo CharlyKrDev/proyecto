@@ -175,7 +175,7 @@ main {
     padding-left: 20px;
     padding-right: 20px;
     align-content: center;
-    min-height: 500px;
+    height: 500px;
 
     
 }
@@ -189,7 +189,7 @@ main {
 
 .nosotrosTexto {
 
-    max-height: 460px;
+    max-height: 560px;
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -235,8 +235,6 @@ p {
     grid-template-rows: repeat(2, 200px);
     background-color: #006bbb;
     margin: auto;
-
-
 
 }
 
@@ -517,6 +515,13 @@ footer nav ul li a:hover {
 
     font-size: 0.95em;
 }
+#nosotros {
+
+    height: 455px;
+
+    
+}
+
 
 }
 
@@ -538,6 +543,11 @@ footer nav ul li a:hover {
         display: none;
     }
 
+    .nosotrosGaleria {
+        margin-bottom: 6em;
+    }
+
+    
 
 }
 
