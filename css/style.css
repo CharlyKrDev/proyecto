@@ -524,6 +524,7 @@ footer nav ul li a:hover {
 
     .video-contacto{
 
+        display: block;
         display: none;
     }
 
