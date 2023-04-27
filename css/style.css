@@ -22,7 +22,7 @@ body{
 
 main {
 
-    height: 915px;
+    height: 900px;
     background-color: #006bbb;
 }
 
@@ -175,7 +175,8 @@ main {
     padding-left: 20px;
     padding-right: 20px;
     align-content: center;
-    height: 500px;
+    min-height: 500px;
+
     
 }
 
@@ -485,7 +486,7 @@ footer nav ul li a:hover {
 /* MEDIA QUERY */
 
 
-@media only screen and (min-width: 300px) and (max-width: 1024px) {
+@media only screen and (min-width: 279px) and (max-width: 1024px) {
 
     .principal-img,
     .inicio-aside {
@@ -514,7 +515,7 @@ footer nav ul li a:hover {
 
 *{
 
-    font-size: 0.97em;
+    font-size: 0.95em;
 }
 
 }
@@ -539,3 +540,4 @@ footer nav ul li a:hover {
 
 
 }
+
