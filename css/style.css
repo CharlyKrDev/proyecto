@@ -398,7 +398,7 @@ p {
 
 footer {
     display: flex !important;
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 16%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(90deg, rgba(2, 13, 35, 1) 16%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
     justify-content: space-between;
     position: absolute;
     width: 100%;
