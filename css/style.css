@@ -533,7 +533,9 @@ footer nav ul li a:hover {
         font-size: 0.99em;
     }
     
+    .nosotros-img{
+        display: none;
+    }
 
 
 }
-
