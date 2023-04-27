@@ -986,7 +986,7 @@ footer nav ul li a:hover {
 
 /* MEDIA QUERY */
 
-@media only screen and (min-width: 480px) and (max-width: 1024px) {
+@media only screen and (min-width: 300px) and (max-width: 1024px) {
 
     .principal-img,
     .inicio-aside {
@@ -1002,5 +1002,9 @@ footer nav ul li a:hover {
         height: 300px;
     
     }
+    .principal-article, .principal-article-2{
+        font-size: 0.8em;
+    }
 }
+
 
