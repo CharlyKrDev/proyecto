@@ -8,11 +8,12 @@
 
 body {
   background-color: #046bba !important;
+  height: 100vh;
+  width: 100%;
 }
 
 main {
-  height: 968px;
-  background-color: #006bbb;
+  height: auto !important;
 }
 
 /* PAGINA INICIO */
@@ -21,12 +22,12 @@ main {
   min-height: auto;
   background-position: center;
   background-size: cover;
-  background-color: #006bbb;
+  background-color: #046bba;
 }
 
 #inicio-principal {
   display: flex;
-  background-color: #006bbb;
+  background-color: #046bba;
   align-items: center;
   height: 1000px;
   margin: auto;
@@ -37,7 +38,7 @@ main {
 }
 
 .inicio-aside {
-  background-color: white;
+  background-color: #fff;
   text-align: center;
   opacity: 0.5;
 }
@@ -54,7 +55,7 @@ main {
 
 .principal h1 {
   text-align: center;
-  color: white;
+  color: #fff;
   margin-bottom: 4em;
 }
 
@@ -72,7 +73,7 @@ main {
   min-width: 40%;
   background-position: center;
   background-size: cover;
-  border: 3px solid white;
+  border: 3px solid #fff;
   margin: 10px;
   align-self: center;
 }
@@ -84,7 +85,7 @@ main {
   min-width: 40%;
   background-position: center;
   background-size: cover;
-  border: 3px solid white;
+  border: 3px solid #fff;
   margin: 10px;
   display: none;
 }
@@ -102,7 +103,7 @@ main {
   -webkit-margin-end: 0px;
           margin-inline-end: 0px;
   margin-top: 40px;
-  color: white;
+  color: #fff;
   font-size: 1em;
 }
 
@@ -142,21 +143,19 @@ main {
 /* PAGINA NOSOTROS */
 /* Style 3.nosotros */
 #nosotros {
-  color: white;
+  color: #fff;
   padding-left: 20px;
   padding-right: 20px;
   align-content: center;
-  height: 500px;
 }
 
-.nosotrosImagenTexto {
+.nosotros-imagen-texto {
   display: flex;
   align-items: center;
   margin-top: 3%;
 }
 
-.nosotrosTexto {
-  max-height: 560px;
+.nosotros-texto {
   display: block;
   -webkit-margin-before: 1em;
           margin-block-start: 1em;
@@ -170,13 +169,13 @@ main {
   font-size: 1em;
 }
 
-.nosotrosTexto h2,
+.nosotros-texto h2,
 p {
   font-family: "Noto Sans", sans-serif;
   font-weight: bold;
 }
 
-.nosotrosTexto h2 {
+.nosotros-texto h2 {
   margin-bottom: 2em;
 }
 
@@ -192,18 +191,17 @@ p {
   margin: 10px;
 }
 
-.nosotrosGaleria {
+.nosotros-galeria {
   width: 70%;
   height: auto;
   padding: 20px;
   display: grid;
-  grid-template-columns: 2, 200px;
+  grid-template-columns: 3, 200px;
   grid-template-rows: repeat(2, 200px);
   background-color: #006bbb;
   margin: auto;
 }
-
-.img {
+.nosotros-galeria .img {
   height: 200px;
   width: 100%;
   border: 3px solid white;
@@ -211,79 +209,100 @@ p {
   background-position: center;
   background-size: cover;
 }
-
-.img1 {
+.nosotros-galeria .img1 {
   background-image: url(../multimedia/img/galeria\ 1.jpg);
+  grid-column: 1/3;
+  grid-row: 1/2;
 }
-
-.img2 {
+.nosotros-galeria .img2 {
+  grid-column: 3/3;
+  grid-row: 1/2;
   background-image: url(../multimedia/img/galeria\ 2.jpeg);
 }
-
-.img3 {
-  background-image: url(../multimedia/img/galeria\ 3.jpg);
-}
-
-.img4 {
-  background-image: url(../multimedia/img/galeria\ 4.jpg);
-}
-
-.img1 {
-  grid-column: 1/4;
-  grid-row: 1/2;
-}
-
-.img2 {
-  grid-column: 3/4;
-  grid-row: 1/2;
-}
-
-.img3 {
+.nosotros-galeria .img3 {
   grid-column: 1/2;
   grid-row: 2/2;
+  background-image: url(../multimedia/img/galeria\ 3.jpg);
 }
-
-.img4 {
+.nosotros-galeria .img4 {
   grid-column: 2/4;
-  grid-row: 2/3;
+  grid-row: 2/2;
+  background-image: url(../multimedia/img/galeria\ 4.jpg);
 }
 
 /* PAGINA SERVICIO */
 /* Style 4.servicio */
-.servicioImagenTexto {
-  max-height: 460px;
+#servicio-principal h1 {
+  color: #fff;
+  margin-left: 40px;
 }
 
-.servicio-img {
-  background-image: url(../multimedia/img/tms-therapy.jpg);
-  height: 360px;
+.servicio-cards-principal {
+  display: flex;
+  padding: 15px;
+  text-align: center;
+}
+.servicio-cards-principal img {
   width: 100%;
-  min-width: 60%;
-  background-position: center;
-  background-size: cover;
-  border: 3px solid white;
+  height: autor;
+}
+.servicio-cards-principal h3 {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.servicio-cards-principal p {
+  line-height: 1.5;
+  color: #fff;
+}
+.servicio-cards-principal a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
   margin: 10px;
+  color: #fff;
+  border: 2px solid #046bba;
+  border-radius: 4px;
+  transition: all 400ms ease;
+}
+.servicio-cards-principal a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: #046bba;
 }
 
-.servicioTexto h2 {
-  color: white;
-  margin-bottom: 2em;
+.servicio-cards {
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.5058823529);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  border: 2px solid #fff;
+  transition: all 400ms ease;
+}
+.servicio-cards:hover {
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
 }
 
-.servicioTexto h3 {
-  color: black;
-  margin-top: 1em;
+.servicio-descripcion {
+  display: flex;
+  flex-direction: column;
 }
-
-.servicioTexto p {
-  color: white;
-  margin-top: 1em;
+.servicio-descripcion a {
+  justify-content: center;
 }
 
 /* PAGINA UBICACION */
 /* Style 5.ubicacion */
 /* RE ARMAR UBICACION PROVISORIO */
-.mapaGoogleMap {
+#ubicacion-principal {
+  color: white;
+  height: 700px;
+}
+
+.mapa-google-map {
   margin: auto;
   padding-top: 20px;
   float: left;
@@ -294,7 +313,7 @@ p {
   margin-bottom: 2em;
 }
 
-.seccionUbicacionDatos {
+.seccion-ubicacion-datos {
   background-color: rgba(179, 231, 248, 0.281);
   height: 450px;
   float: right;
@@ -302,29 +321,28 @@ p {
   margin-top: 2.5%;
   border: 2px solid black;
   width: 650px;
-  color: white;
 }
 
-.seccionUbicacionDatos ul li {
+.seccion-ubicacion-datos ul li {
   list-style: none;
   margin-left: 2em;
   text-align: left;
 }
 
-.seccionUbicacionDatos ul li p {
+.seccion-ubicacion-datos ul li p {
   font-weight: bold;
 }
 
-.seccionUbicacion {
+.seccion-ubicacion {
   display: flex;
 }
 
-#ubicacionPrincipal h2 {
+#ubicacion-principal h2 {
   text-align: center;
   margin-right: 10%;
 }
 
-.direccionesBox {
+.direcciones-box {
   -webkit-margin-before: 1em;
           margin-block-start: 1em;
   -webkit-margin-after: 1em;
@@ -333,7 +351,6 @@ p {
           margin-inline-start: 0px;
   -webkit-margin-end: 0px;
           margin-inline-end: 0px;
-  color: white;
   font-size: 1em;
 }
 
@@ -348,6 +365,7 @@ footer {
 }
 
 .logo {
+  margin-top: 10px;
   margin-left: 12%;
   padding-top: 0.5%;
 }
@@ -357,11 +375,11 @@ footer {
   min-width: 33%;
 }
 
-ul {
+.menu ul {
   display: flex;
 }
 
-li {
+.menu ul li {
   list-style: none;
   color: white;
   transition: background-color 0.5s;
@@ -445,6 +463,10 @@ footer nav ul li a:hover {
     margin-top: 1.7em;
     margin-left: 0.7em;
   }
+  .servicio-cards-principal {
+    display: block;
+    margin-right: 40px;
+  }
 }
 @media only screen and (min-width: 353px) and (max-width: 1143px) {
   * {
@@ -454,7 +476,6 @@ footer nav ul li a:hover {
     height: 1300px;
   }
   .principal-img2 {
-    background-image: url(../multimedia/img/clinica.jpg);
     height: 360px;
     width: 99%;
     background-position: center;
@@ -501,9 +522,8 @@ footer nav ul li a {
 }
 
 .whatsapp {
-  height: 10px;
-  width: 10px;
-  background-image: url(../multimedia/img/whatsapp-g3fd051040_1280.png);
+  height: 0px;
+  width: 0px;
   background-size: contain;
   position: fixed;
   bottom: 6.2em;

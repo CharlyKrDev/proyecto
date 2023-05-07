@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;700&family=Open+Sans&family=Oswald&family=Roboto+Condensed:wght@700&display=swap')
 
+$colorprincipal: #046bba
+$colortexto: #fff
 // /* Fuentes
 // font-family: 'Noto Sans', sans-serif;
 // font-family: 'Open Sans', sans-serif;
@@ -11,12 +13,12 @@
     box-sizing: border-box
 
 body
-    background-color: #046bba!important
+    background-color: #046bba !important
+    height: 100vh
+    width: 100%
 
 main
-
-    height: 968px
-    background-color: #006bbb
+    height: auto !important
 
 /* PAGINA INICIO */
 /* Style index */
@@ -26,12 +28,12 @@ main
     min-height: auto
     background-position: center
     background-size: cover
-    background-color: #006bbb
+    background-color: $colorprincipal
 
 #inicio-principal
 
     display: flex
-    background-color: #006bbb
+    background-color: $colorprincipal
     align-items: center
     height: 1000px
     margin: auto
@@ -41,7 +43,7 @@ main
 
 .inicio-aside
 
-    background-color: white
+    background-color: $colortexto
     text-align: center
     opacity: 0.5
 
@@ -53,14 +55,14 @@ main
 .principal
 
     width: 100%
-    background-color: #046bba
+    background-color: $colorprincipal
     padding-top: 1em
 
 .principal
 
     h1
         text-align: center
-        color: white
+        color: $colortexto
         margin-bottom: 4em
 
 .principal-img-article
@@ -77,7 +79,7 @@ main
     min-width: 40%
     background-position: center
     background-size: cover
-    border: 3px solid white
+    border: 3px solid $colortexto
     margin: 10px
     align-self: center
 
@@ -89,7 +91,7 @@ main
     min-width: 40%
     background-position: center
     background-size: cover
-    border: 3px solid white
+    border: 3px solid $colortexto
     margin: 10px
     display: none
 
@@ -103,7 +105,7 @@ main
     margin-inline-start: 0px
     margin-inline-end: 0px
     margin-top: 40px
-    color: white
+    color: $colortexto
     font-size: 1em
 
 .principal-article-2
