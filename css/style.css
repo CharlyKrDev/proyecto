@@ -168,6 +168,10 @@ main {
   margin-top: 40px;
   font-size: 1em;
 }
+.nosotros-texto span {
+  color: #7be3fa;
+  font-weight: 800;
+}
 
 .nosotros-texto h2,
 p {
