@@ -4,61 +4,68 @@
 /* RE ARMAR UBICACION PROVISORIO */
 
 #ubicacion-principal
-    color: white
-    height: 700px 
-    
+    margin-bottom: 5em
+    min-height: 850px
+    h1
+        color: $colortexto
+    strong
+        color: $colorstrong
 
-.mapa-google-map 
-    margin: auto
-    padding-top: 20px
-    float: left
-    padding-left: 15%
-
-
-.mapaGoogleMap h2 
-
-    margin-bottom: 2em
-
-
-
-.seccion-ubicacion-datos 
-    background-color: rgba(179, 231, 248, 0.281)
-    height: 450px
-    float: right
-    margin-right: 15%
-    margin-top: 2.5%
-    border: 2px solid black
-    width: 650px
-
-
-
-.seccion-ubicacion-datos ul li 
-    list-style: none
-    margin-left: 2em
-    text-align: left
-
-
-
-.seccion-ubicacion-datos ul li p 
-
-    font-weight: bold
-
-
-.seccion-ubicacion 
+.ubicacion-cards
     display: flex
+    justify-content: space-evenly
+    align-items: center
+    background-color: $colorprincipal
+    flex-wrap: wrap
+    margin: 2em
+    height: auto
 
+.box-ubicacion
+    height: 300px
+    width: 300px
+    color: white
+    font-size: .7em
+    margin-bottom: 1em
+    box-shadow: 1px 5px 5px rgba(20, 136, 231, 0.795)
 
+.ubicacion-box2    
+    border-radius: 3em
+    display: flex
+    justify-content: center
+    align-items: center
+    transition-duration: 2s    
+    li
+        list-style: none
+        margin-top: 1em
+        margin-left: 0.7em
+        text-align: center
+        word-wrap: break-word
+    &:hover
+        background-color: #ffffff4d
+        color: black
+        font-size: 1.2em
+        border-radius: 80px
+        font-weight: 700
 
-#ubicacion-principal h2 
-    text-align: center
-    margin-right: 10%
+.ubicacion-box3
+    border-radius: 3em
+    padding: 1em
+    width: 400px
+    height: auto
+    text-align: left
+    word-wrap: break-word
+    overflow: auto
 
-.direcciones-box 
+.ubicacion-box4
+    width: 400px
+    background-image: url(../multimedia/img/venado-ST.jpg)
+    filter: grayscale(1)
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    transition-duration: 1s
 
-    margin-block-start: 1em
-    margin-block-end: 1em
-    margin-inline-start: 0px
-    margin-inline-end: 0px
-    font-size: 1em
-
-
+    &:hover
+        transform: scale(110%)
+        filter: grayscale(0)
+        border-radius: 30px
