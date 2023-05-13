@@ -1,13 +1,11 @@
 /* PAGINA UBICACION */
 /* Style 5.ubicacion */
-
-/* RE ARMAR UBICACION PROVISORIO */
-
 #ubicacion-principal
     margin-bottom: 5em
     min-height: 850px
     h1
-        color: $colortexto
+        margin-top: 1em
+        margin-left: 33px
     strong
         color: $colorstrong
 
@@ -19,6 +17,11 @@
     flex-wrap: wrap
     margin: 2em
     height: auto
+    a 
+        text-decoration: none
+        color: $colortexto
+        &:hover
+            text-decoration: none
 
 .box-ubicacion
     height: 300px
@@ -33,7 +36,8 @@
     display: flex
     justify-content: center
     align-items: center
-    transition-duration: 2s    
+    transition-duration: 1.5s 
+
     li
         list-style: none
         margin-top: 1em
@@ -44,7 +48,7 @@
         background-color: #ffffff4d
         color: black
         font-size: 1.2em
-        border-radius: 80px
+        border-radius: 50px
         font-weight: 700
 
 .ubicacion-box3
@@ -63,7 +67,7 @@
     background-size: cover
     background-position: center
     background-repeat: no-repeat
-    transition-duration: 1s
+    transition-duration: 0.6s
 
     &:hover
         transform: scale(110%)

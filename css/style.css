@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+* h1 {
+  color: #fff;
+}
 
 body {
   background-color: #046bba !important;
@@ -59,7 +62,6 @@ main {
 
 .principal h1 {
   text-align: center;
-  color: #fff;
   margin-bottom: 4em;
 }
 
@@ -119,17 +121,20 @@ main {
 /* PAGINA CONTACTO */
 /* Style 2.contacto */
 #contactoPrincipal {
-  background-color: rgba(13, 135, 206, 0.925);
+  background-color: #046bba;
   height: 800px !important;
 }
 
 .bigicon {
   font-size: 35px;
-  color: #071929;
+  color: #fff;
+  margin-bottom: 5px;
 }
 
 #contactoPrincipal h1 {
-  text-align: center;
+  margin-left: 33px;
+  color: #fff;
+  margin-top: 1em;
 }
 
 .container {
@@ -151,6 +156,10 @@ main {
   padding-left: 20px;
   padding-right: 20px;
   align-content: center;
+  margin-left: 12px;
+}
+#nosotros h1 {
+  margin-top: 1em;
 }
 
 .nosotros-imagen-texto {
@@ -241,8 +250,8 @@ p {
 /* PAGINA SERVICIO */
 /* Style 4.servicio */
 #servicio-principal h1 {
-  color: #fff;
-  margin-left: 40px;
+  margin-left: 33px;
+  margin-top: 1em;
 }
 
 .servicio-cards-principal {
@@ -305,13 +314,13 @@ p {
 
 /* PAGINA UBICACION */
 /* Style 5.ubicacion */
-/* RE ARMAR UBICACION PROVISORIO */
 #ubicacion-principal {
   margin-bottom: 5em;
   min-height: 850px;
 }
 #ubicacion-principal h1 {
-  color: #fff;
+  margin-top: 1em;
+  margin-left: 33px;
 }
 #ubicacion-principal strong {
   color: #7be3fa;
@@ -325,6 +334,13 @@ p {
   flex-wrap: wrap;
   margin: 2em;
   height: auto;
+}
+.ubicacion-cards a {
+  text-decoration: none;
+  color: #fff;
+}
+.ubicacion-cards a:hover {
+  text-decoration: none;
 }
 
 .box-ubicacion {
@@ -341,7 +357,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition-duration: 2s;
+  transition-duration: 1.5s;
 }
 .ubicacion-box2 li {
   list-style: none;
@@ -354,7 +370,7 @@ p {
   background-color: rgba(255, 255, 255, 0.3019607843);
   color: black;
   font-size: 1.2em;
-  border-radius: 80px;
+  border-radius: 50px;
   font-weight: 700;
 }
 
@@ -375,7 +391,7 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  transition-duration: 1s;
+  transition-duration: 0.6s;
 }
 .ubicacion-box4:hover {
   transform: scale(110%);
