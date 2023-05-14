@@ -254,7 +254,7 @@ p {
 .img2,
 .img3 {
   filter: grayscale(100%);
-  transform: scale(1);
+  transform: scale(1.2);
   transition: 1s;
 }
 
