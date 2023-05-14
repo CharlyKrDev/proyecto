@@ -267,7 +267,7 @@ p {
 .img1,
 .img4 {
   filter: sepia(0.5);
-  transform: scale(0.9) rotatex(45deg);
+  transform: scale(0.9) rotatex(45deg) rotate(5deg);
   transition: 1s;
 }
 
