@@ -5,7 +5,22 @@
 
     *
         font-size: 0.96em !important
+    .whatsapp
 
+        height: 10px
+        width: 10px
+        background-image: url(../Img/whatsapp-g3fd051040_1280.png)
+        background-size: contain
+        position: fixed
+        bottom: 6.2em
+        left: 5px
+        opacity: .7
+        z-index: 1
+        img
+            height: 30px
+            width: 30px
+            margin-top: 1.7em
+            margin-left: .7em
 @media only screen and (min-width: 353px) and (max-width: 628px)
 
     .whatsapp
@@ -45,6 +60,16 @@
         border: 3px solid white
         display: flex
         margin: auto
+        animation: rotate-scale-up 0.65s linear both
+        @keyframes rotate-scale-up
+            0%
+                transform: scale(0.2) rotateZ(0)
+
+            50%
+                transform: scale(0.5) rotateZ(180deg)
+
+            100%
+                transform: scale(1) rotateZ(360deg)
     .principal
         h1
             text-align: center
