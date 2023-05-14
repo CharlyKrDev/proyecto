@@ -51,7 +51,7 @@ p
 
 @mixin grizaceo
     filter: grayscale(100%)
-    transform: scale(1.2)
+    transform: scale(0.9)
     transition: 1s
 
 @mixin sepiainclinado
@@ -67,7 +67,7 @@ p
     display: grid
     grid-template-columns: (3, 200px)
     grid-template-rows: repeat(2, 200px)
-    background-color: #006bbb
+    background-color: $colorprincipal
     margin: auto
     .img
         height: 200px
@@ -102,7 +102,7 @@ p
 .img2:hover,
 .img3:hover
     filter: grayscale(0%)
-    transform: scale(0.9)
+    transform: scale(1.2)
 .img1,
 .img4
     @include sepiainclinado
