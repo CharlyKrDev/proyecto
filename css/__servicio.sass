@@ -8,7 +8,7 @@
 
 .servicio-cards-principal
 
-    display: flex
+    display: $displayflex
     padding: 15px
     text-align: center
 
@@ -36,8 +36,9 @@
 
     & a:hover
         text-decoration: none
-        color: #fff
+        color: $colortexto
         background: $colorprincipal
+
 
 .servicio-cards
 
@@ -57,10 +58,15 @@
         transform: translateY(-3%)
 
 .servicio-descripcion
-    display: flex
+    display: $displayflex
     flex-direction: column
 
     & a
 
         justify-content: center
 
+.servicio-descripcion
+    @if $displayflex == flex 
+        color: #212529
+    @else if $displayflex == block
+        color: blue

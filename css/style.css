@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;700&family=Open+Sans&family=Oswald&family=Roboto+Condensed:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +6,11 @@
 }
 * h1 {
   color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+  text-shadow: -2px 4px 8px rgb(213, 213, 213);
+}
+* h2 p a li {
+  font-family: "Noto Sans", sans-serif;
 }
 
 body {
@@ -247,6 +251,32 @@ p {
   background-image: url(../multimedia/img/galeria\ 4.jpg);
 }
 
+.img2,
+.img3 {
+  filter: grayscale(100%);
+  transform: scale(1);
+  transition: 1s;
+}
+
+.img2:hover,
+.img3:hover {
+  filter: grayscale(0%);
+  transform: scale(0.9);
+}
+
+.img1,
+.img4 {
+  filter: sepia(0.5);
+  transform: scale(0.9) rotatex(45deg);
+  transition: 1s;
+}
+
+.img1:hover,
+.img4:hover {
+  filter: sepia(0);
+  transform: scale(1);
+}
+
 /* PAGINA SERVICIO */
 /* Style 4.servicio */
 #servicio-principal h1 {
@@ -310,6 +340,10 @@ p {
 }
 .servicio-descripcion a {
   justify-content: center;
+}
+
+.servicio-descripcion {
+  color: #212529;
 }
 
 /* PAGINA UBICACION */

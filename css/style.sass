@@ -3,6 +3,13 @@
 $colorprincipal: #046bba
 $colortexto: #fff
 $colorstrong: #7be3fa
+$fontprincipal: 'Roboto Condensed', sans-serif
+$fontsecundaria: "Noto Sans", sans-serif
+$displayflex: flex
+$displayblock: block
+$color: color
+$minwidth: 352px
+
 // /* Fuentes
 // font-family: 'Noto Sans', sans-serif;
 // font-family: 'Open Sans', sans-serif;
@@ -14,11 +21,18 @@ $colorstrong: #7be3fa
     box-sizing: border-box
     h1
         color: $colortexto
+        font-family: $fontprincipal
+        text-shadow: -2px 4px 8px rgba(213,213,213,1)
+    h2 p a li
+        font-family: $fontsecundaria
+
 
 body
     background-color: #046bba !important
     height: 100vh
     width: 100%
+
+
 
 main
     height: auto !important
@@ -36,7 +50,7 @@ main
 
 #inicio-principal
 
-    display: flex
+    display: $displayflex
     background-color: $colorprincipal
     align-items: center
     height: auto
