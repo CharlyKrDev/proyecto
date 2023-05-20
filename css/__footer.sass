@@ -6,7 +6,7 @@ footer
     justify-content: space-between
     position: absolute
     width: 100%
-    height: 100px
+    height: auto
 
 .logo
     margin-top:10px
@@ -28,6 +28,8 @@ footer
             color: white
             transition: background-color .5s
             text-decoration: none
+            margin: 0 0 1em 1em
+            
 
 footer
     nav
@@ -39,6 +41,7 @@ footer
                     transition: background-color .5s
                     text-decoration: none
                     font-size: 2em
+                    transition: 0.3s
 
 footer 
     nav 
@@ -46,10 +49,9 @@ footer
             li 
                 a:hover
                         background-color: transparent
-                        border: solid 2px
-                        border-radius: 20px
                         text-decoration: underline
-                        color: white
+                        color: $colorstrong
+                        font-size: 2.2em !important
 
 .whatsapp
 
@@ -60,6 +62,7 @@ footer
     position: fixed
     left: 20px
     opacity: .7
+    margin: 0 0 1em 0
     img
         height: 50px
         width: 50px

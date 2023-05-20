@@ -37,8 +37,8 @@
         img
             height: 40px
             width: 40px
-            margin-top: 1.7em
-            margin-left: .7em
+            margin-top: 2.5em
+            margin-left: .2em
     .servicio-cards-principal
 
         display: block
@@ -60,16 +60,17 @@
         border: 3px solid white
         display: flex
         margin: auto
-        animation: rotate-scale-up 0.65s linear both
-        @keyframes rotate-scale-up
-            0%
-                transform: scale(0.2) rotateZ(0)
+        &:hover
+            animation: rotate-scale-up 1s linear both
+            @keyframes rotate-scale-up
+                0%
+                    transform: scale(0.2) rotateZ(0)
 
-            50%
-                transform: scale(0.5) rotateZ(180deg)
+                50%
+                    transform: scale(0.5) rotateZ(180deg)
 
-            100%
-                transform: scale(1) rotateZ(360deg)
+                100%
+                    transform: scale(1) rotateZ(360deg)
     .principal
         h1
             text-align: center
@@ -111,9 +112,8 @@ footer nav ul li a
     width: 0px
     background-size: contain
     position: fixed
-    bottom: 6.2em
+    bottom: 6.5em
     left: 5px
     opacity: 0.7
     z-index: 1
-
 
